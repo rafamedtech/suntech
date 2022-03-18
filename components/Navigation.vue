@@ -1,38 +1,134 @@
 <template>
-  <header class="bg-black text-white">
-    <nav
-      class="container relative flex items-center justify-around gap-4 py-3 px-4 sm:flex-row"
-    >
-      <article class="flex items-center gap-x-4">
-        <img
-          :src="require('@/assets/images/Suntech.png')"
-          alt="logo"
-          class="w-1/2 lg:w-1/3"
-        />
-      </article>
-
-      <ul
-        class="absolute -bottom-48 right-12 z-50 flex flex-1 flex-col justify-end gap-y-4 gap-x-10 rounded-lg border border-orange-600 bg-black/50 px-8 py-2 text-right text-lg text-white md:static md:flex-row md:border-transparent md:bg-transparent"
+  <nav class="bg-black text-sm text-gray-500">
+    <div class="relative mx-auto max-w-6xl">
+      <div class="flex items-center justify-between p-4">
+        <a href="/" class="w-1/2 p-1 focus:outline-none"
+          ><img
+            class="h-12"
+            :src="require('@/assets/images/suntech.png')"
+            alt=""
+        /></a>
+        <div class="hidden lg:block">
+          <ul class="flex cursor-pointer items-center space-x-12 text-lg">
+            <li class="group relative">
+              <nuxt-link
+                to="/blog"
+                type="button"
+                class="rounded-md px-2 py-1 focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 group-hover:text-primary"
+              >
+                Blog
+              </nuxt-link>
+            </li>
+            <li class="group relative">
+              <nuxt-link
+                to="/"
+                type="button"
+                class="rounded-md px-2 py-1 focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 group-hover:text-primary"
+              >
+                Tienda
+              </nuxt-link>
+            </li>
+            <li class="group relative">
+              <nuxt-link
+                to="/contacto"
+                type="button"
+                class="rounded-md px-2 py-1 focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 group-hover:text-primary"
+              >
+                Contacto
+              </nuxt-link>
+            </li>
+          </ul>
+        </div>
+        <a
+          href="https://flurly.com/p/tailmars"
+          class="hidden items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-medium text-white hover:bg-primary/75 hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 lg:flex"
+        >
+          Comprar!
+        </a>
+        <button
+          id="menu-toggle"
+          class="rounded-md p-1 focus:outline-none focus:ring-2 focus:ring-primary lg:hidden"
+        >
+          <svg
+            id="menu-open"
+            class="h-7 w-7"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            @click="toggleMenu"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          <svg
+            id="menu-close"
+            class="hidden h-7 w-7"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        v-show="isOpen"
+        id="mobile-menu"
+        class="absolute inset-x-0 top-20 z-10 pb-4 lg:hidden"
       >
-        <nuxt-link class="cursor-pointer" to="/">Inicio</nuxt-link>
-        <nuxt-link class="cursor-pointer" to="/blog">Blog</nuxt-link>
-        <nuxt-link class="cursor-pointer" to="/store">Tienda</nuxt-link>
-        <nuxt-link class="cursor-pointer" to="/contact">Contacto</nuxt-link>
-      </ul>
+        <div
+          class="mx-4 rounded-md bg-white p-4 text-center font-normal shadow-xl-even"
+        >
+          <div>
+            <h2 class="mb-4 text-lg">Blog</h2>
+          </div>
+          <hr class="divider my-6" />
+          <div>
+            <h2 class="mb-4 text-lg">Tienda</h2>
+          </div>
+          <hr class="divider my-6" />
+          <h2 class="mb-4 text-lg">Contacto</h2>
 
-      <MenuDown
-        class="focus:ring-primary-600 rounded-md p-1 focus:outline-none focus:ring-2 md:hidden"
-        :size="36"
-      />
-    </nav>
-  </header>
+          <hr class="divider my-6" />
+          <a
+            href="https://flurly.com/p/tailmars"
+            class="flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-medium text-white hover:bg-primary/75 hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+          >
+            Comprar!
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script>
-import MenuDown from 'icons/Menu.vue'
+// import MenuDown from 'icons/Menu.vue'
 export default {
   components: {
-    MenuDown,
+    // MenuDown,
+  },
+  data: () => ({
+    isOpen: false,
+  }),
+
+  methods: {
+    toggleMenu() {
+      this.isOpen = !this.isOpen
+      // eslint-disable-next-line no-console
+      console.log(this.isOpen)
+    },
   },
 }
 </script>

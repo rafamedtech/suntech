@@ -23,7 +23,7 @@ export default {
   css: ['@/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '~~/node_modules/vue-rellax/lib/nuxt-plugin', ssr: false },],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -33,12 +33,15 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxt/postcss8',
+    
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    
+    
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -48,7 +51,9 @@ export default {
   build: {
     postcss: {
       plugins: {
-        tailwindcss: {},
+        tailwindcss: {
+
+        },
         autoprefixer: {},
       },
     },
