@@ -1,10 +1,10 @@
 <template>
   <div>
-    <section class="transform bg-primary text-white">
+    <section class="blog-banner transform bg-primary text-white">
       <div class="mx-auto max-w-6xl transform px-4 pt-32 pb-20 sm:px-6 lg:px-8">
         <h1 class="text-4xl font-medium">Tienes alguna duda?</h1>
         <p class="pt-4 text-xl text-gray-300 lg:w-3/6">
-          Tenemos varias formas para que te contactes con nosotros.
+          Contactanos, sera un gusto poder ayudarte.
         </p>
         <button
           type="button"
@@ -29,7 +29,9 @@
         </button>
       </div>
     </section>
-    <div class="mb-28 -mt-14 h-28 -skew-y-3 transform bg-primary"></div>
+    <div
+      class="mb-20 -mt-10 h-20 -skew-y-3 transform bg-primary xl:-mt-12 xl:h-24"
+    ></div>
     <section
       class="mx-auto max-w-6xl transform px-4 pb-12 sm:px-6 lg:mt-32 lg:px-8 lg:pb-20"
     >
@@ -177,62 +179,63 @@
     >
       <h1 id="form" class="mb-2 text-primary">Platiquemos!</h1>
       <p class="mb-4 text-gray-600">
-        Si hay algo en lo que podamos ayudarte, simplemente haznolo saber.
+        Si hay algo en lo que podamos ayudarte, simplemente haznos saber.
         Estaremos mas que felices de ofrecerle una solucion.
       </p>
-      <form>
-        <fieldset>
-          <legend class="sr-only">Get in touch form</legend>
-          <label for="name">
-            <input
-              class="border-1 mb-3 w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-transparent focus:outline-primary focus:ring-transparent"
-              name="name"
-              type="text"
-              placeholder="Nombre"
-              aria-label="Tu nombre"
-            />
-          </label>
-          <label for="email">
-            <input
-              class="border-1 mb-3 w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-transparent focus:outline-primary focus:ring-transparent"
-              name="email"
-              type="email"
-              placeholder="Correo Electronico"
-              aria-label="Direccion de correo electronico"
-            />
-          </label>
-          <label for="phone">
-            <input
-              class="border-1 mb-3 w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-transparent focus:outline-primary focus:ring-transparent"
-              name="phone"
-              type="tel"
-              placeholder="Numero de telefono"
-              aria-label="Numero de telefono"
-            />
-          </label>
-          <label for="message">
-            <textarea
-              class="border-1 w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-transparent focus:outline-primary focus:ring-transparent"
-              name="message"
-              cols="30"
-              rows="5"
-              placeholder="En que podemos ayudarte!"
-              aria-label="Tu mensaje"
-            ></textarea>
-          </label>
-        </fieldset>
-        <button
-          type="submit"
-          class="mt-3 w-full rounded-lg bg-primary px-6 py-3 text-lg font-medium text-white hover:bg-primary/75"
-          aria-label="Enviar mensaje"
-        >
-          Enviar mensaje
-        </button>
-      </form>
+      <ContactForm />
     </section>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data: () => ({
+    formData: {
+      name: '',
+      email: '',
+      phone: '',
+      message: '',
+    },
+  }),
+
+  head: {
+    title: 'Contacto | Suntech Electronics',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Contacto de Suntech Electronics. Si tienes alguna duda o sugerencia, puedes escribirnos a nuestro correo electrónico o enviar un mensaje desde el formulario',
+      },
+    ],
+  },
+
+  methods: {
+    onSubmit() {
+      const formData = new FormData()
+      formData.append('your-name', this.formData.name)
+      formData.append('your-email', this.formData.email)
+      formData.append('your-phone', this.formData.phone)
+      formData.append('your-message', this.formData.message)
+
+      this.$store.dispatch('sendForm', formData)
+      this.formData = {
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+      }
+    },
+  },
+}
 </script>
+
+<style scoped>
+.blog-banner {
+  background-image: url('@/assets/images/contact.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+</style>

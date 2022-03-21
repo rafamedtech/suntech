@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-black text-sm text-gray-500">
+  <nav class="bg-[#2C394B] text-sm text-gray-500">
     <div class="relative mx-auto max-w-6xl">
       <div class="flex items-center justify-between p-4">
         <a href="/" class="w-1/2 p-1 focus:outline-none"
@@ -8,7 +8,7 @@
             :src="require('@/assets/images/suntech.png')"
             alt=""
         /></a>
-        <div class="hidden lg:block">
+        <div class="hidden lg:flex lg:gap-12">
           <ul class="flex cursor-pointer items-center space-x-12 text-lg">
             <li class="group relative">
               <nuxt-link
@@ -19,15 +19,7 @@
                 Blog
               </nuxt-link>
             </li>
-            <li class="group relative">
-              <nuxt-link
-                to="/"
-                type="button"
-                class="rounded-md px-2 py-1 focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 group-hover:text-primary"
-              >
-                Tienda
-              </nuxt-link>
-            </li>
+
             <li class="group relative">
               <nuxt-link
                 to="/contacto"
@@ -38,13 +30,13 @@
               </nuxt-link>
             </li>
           </ul>
+          <a
+            href="https://flurly.com/p/tailmars"
+            class="hidden items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-medium text-white hover:bg-primary/75 hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 lg:flex"
+          >
+            Tienda <CartIcon />
+          </a>
         </div>
-        <a
-          href="https://flurly.com/p/tailmars"
-          class="hidden items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-medium text-white hover:bg-primary/75 hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 lg:flex"
-        >
-          Comprar!
-        </a>
         <button
           id="menu-toggle"
           class="rounded-md p-1 focus:outline-none focus:ring-2 focus:ring-primary lg:hidden"
@@ -93,10 +85,7 @@
           <div>
             <h2 class="mb-4 text-lg">Blog</h2>
           </div>
-          <hr class="divider my-6" />
-          <div>
-            <h2 class="mb-4 text-lg">Tienda</h2>
-          </div>
+
           <hr class="divider my-6" />
           <h2 class="mb-4 text-lg">Contacto</h2>
 
@@ -105,7 +94,7 @@
             href="https://flurly.com/p/tailmars"
             class="flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-medium text-white hover:bg-primary/75 hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
-            Comprar!
+            Tienda <CartIcon />
           </a>
         </div>
       </div>
@@ -114,10 +103,10 @@
 </template>
 
 <script>
-// import MenuDown from 'icons/Menu.vue'
+import CartVariant from 'icons/CartVariant.vue'
 export default {
   components: {
-    // MenuDown,
+    CartIcon: CartVariant,
   },
   data: () => ({
     isOpen: false,

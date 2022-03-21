@@ -1,17 +1,24 @@
 <template>
   <main class="bg-[#f3f4f6]">
-    <section class="transform bg-black text-white">
+    <section class="blog-banner transform bg-primary text-white">
       <div class="mx-auto max-w-6xl transform px-4 pt-32 pb-20 sm:px-6 lg:px-8">
-        <h1 class="text-5xl font-medium">Blog</h1>
-        <p class="pt-4 text-xl text-orange-600 lg:w-3/6">
-          Keep up to date with everything we're working on.
+        <h1 class="text-5xl font-medium text-primary">Blog</h1>
+        <p class="pt-4 text-xl lg:w-3/6">
+          Aqui podras encontrar nuestros ultimos articulos.
         </p>
+        <button
+          type="button"
+          class="mt-6 flex items-center rounded-lg bg-white px-6 py-3 font-medium text-gray-600 opacity-0 hover:text-primary"
+          aria-label="Send us a message"
+        >
+          <span>Visita nuestro blog!</span>
+        </button>
       </div>
     </section>
-    <div class="mb-20 -mt-14 h-28 -skew-y-3 transform bg-black"></div>
     <div
-      class="mx-auto max-w-6xl transform px-4 pb-8 sm:px-6 lg:mt-24 lg:px-8 lg:pb-16"
-    >
+      class="mb-20 -mt-10 h-20 -skew-y-3 transform bg-primary xl:-mt-12 xl:h-24"
+    ></div>
+    <div class="mx-auto max-w-6xl transform px-4 pb-8 sm:px-6 lg:mt-24 lg:px-8">
       <form class="relative mt-1 rounded-lg lg:mb-16">
         <div class="absolute inset-y-0 left-0 flex items-center">
           <label for="search" class="sr-only">Search</label>
@@ -35,16 +42,8 @@
           type="text"
           name="search"
           class="w-full rounded-lg border border-gray-300 px-4 py-4 pl-12 pr-32 focus:border-transparent focus:outline-primary focus:ring-transparent"
-          placeholder="Busca en nuestro blog"
+          placeholder="Empieza a escribir para buscar en nuestro blog"
         />
-        <div class="absolute inset-y-0 right-2 flex items-center">
-          <button
-            type="submit"
-            class="w-full rounded-lg bg-primary px-6 py-2 text-lg font-medium text-white hover:bg-primary/75"
-          >
-            Search
-          </button>
-        </div>
       </form>
     </div>
     <section
@@ -60,8 +59,19 @@ export default {
   data: () => ({
     posts: [],
     search: '',
-    searchResult: [],
   }),
+
+  head: {
+    title: 'Blog | Suntech Electronics',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Aqui podras encontrar nuestros ultimos articulos.',
+      },
+    ],
+  },
+
   computed: {
     searchPosts() {
       return this.posts.filter((post) =>
@@ -72,19 +82,29 @@ export default {
       return this.$store.getters['posts/getPosts']
     },
   },
-  created() {
-    this.$store.dispatch('posts/fetchPosts')
-    this.posts = this.getPosts
-    // try {
-    //   const { data, error } = await this.$axios.get(
-    //     'https://suntech.local/wp-json/wp/v2/posts/'
-    //   )
-    //   this.posts = data
-    //   if (error) throw error
-    // } catch (error) {
-    //   // eslint-disable-next-line no-console
-    //   console.log(error)
-    // }
+  async created() {
+    // this.$store.dispatch('posts/fetchPosts')
+    // this.posts = this.getPosts
+    try {
+      const { data, error } = await this.$axios.get(
+        'https://suntech.local/wp-json/wp/v2/posts/'
+      )
+      this.posts = data
+      if (error) throw error
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.log(error)
+    }
   },
 }
 </script>
+
+<style scoped>
+.blog-banner {
+  background-image: url('@/assets/images/blog.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+</style>

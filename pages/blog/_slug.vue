@@ -48,6 +48,17 @@
 <script>
 import marked from 'marked'
 export default {
+  // head: {
+  //   title: `${this.post.title.rendered} | Suntech Electronics`,
+  //   meta: [
+  //     {
+  //       hid: 'description',
+  //       name: 'description',
+  //       content: this.post.excerpt.rendered,
+  //     },
+  //   ],
+  // },
+
   computed: {
     post() {
       return this.$store.getters['posts/getSinglePost'](this.$route.params.slug)

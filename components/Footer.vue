@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full bg-black">
+  <footer class="w-full bg-[#2C394B]">
     <div class="mx-auto max-w-7xl overflow-hidden px-4 py-12 sm:px-6 lg:px-8">
       <div class="mt-8 flex justify-center space-x-6">
         <a href="#">
