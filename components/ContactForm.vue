@@ -71,8 +71,12 @@ export default {
       formData.append('your-email', this.formData.email)
       formData.append('your-phone', this.formData.phone)
       formData.append('your-message', this.formData.message)
-
       this.$store.dispatch('sendForm', formData)
+
+      if (this.$route.path === '/') {
+        window.scrollTo(0, 0)
+      }
+
       this.formData = {
         name: '',
         email: '',

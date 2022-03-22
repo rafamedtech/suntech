@@ -2,12 +2,12 @@
   <nav class="bg-[#2C394B] text-sm text-gray-500">
     <div class="relative mx-auto max-w-6xl">
       <div class="flex items-center justify-between p-4">
-        <a href="/" class="w-1/2 p-1 focus:outline-none"
+        <nuxt-link :to="{ path: '/' }" class="w-1/2 p-1 focus:outline-none"
           ><img
             class="h-12"
             :src="require('@/assets/images/suntech.png')"
             alt=""
-        /></a>
+        /></nuxt-link>
         <div class="hidden lg:flex lg:gap-12">
           <ul class="flex cursor-pointer items-center space-x-12 text-lg">
             <li class="group relative">
@@ -74,30 +74,42 @@
           </svg>
         </button>
       </div>
-      <div
-        v-show="isOpen"
-        id="mobile-menu"
-        class="absolute inset-x-0 top-20 z-10 pb-4 lg:hidden"
-      >
+      <transition name="menu-fade">
         <div
-          class="mx-4 rounded-md bg-white p-4 text-center font-normal shadow-xl-even"
+          v-show="isOpen"
+          id="mobile-menu"
+          class="absolute inset-x-0 top-20 z-10 pb-4 lg:hidden"
         >
-          <div>
-            <h2 class="mb-4 text-lg">Blog</h2>
-          </div>
-
-          <hr class="divider my-6" />
-          <h2 class="mb-4 text-lg">Contacto</h2>
-
-          <hr class="divider my-6" />
-          <a
-            href="https://flurly.com/p/tailmars"
-            class="flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-medium text-white hover:bg-primary/75 hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+          <div
+            class="mx-4 rounded-md bg-white p-4 text-center font-normal shadow-xl-even"
           >
-            Tienda <CartIcon />
-          </a>
+            <div>
+              <nuxt-link
+                :to="{ path: '/blog' }"
+                class="mb-4 text-lg"
+                @click.native="toggleMenu"
+                >Blog</nuxt-link
+              >
+            </div>
+
+            <hr class="divider my-6" />
+            <nuxt-link
+              :to="{ path: '/contacto' }"
+              class="mb-4 text-lg"
+              @click.native="toggleMenu"
+              >Contacto</nuxt-link
+            >
+
+            <hr class="divider my-6" />
+            <a
+              href="https://flurly.com/p/tailmars"
+              class="flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-medium text-white hover:bg-primary/75 hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            >
+              Tienda <CartIcon />
+            </a>
+          </div>
         </div>
-      </div>
+      </transition>
     </div>
   </nav>
 </template>
@@ -115,8 +127,6 @@ export default {
   methods: {
     toggleMenu() {
       this.isOpen = !this.isOpen
-      // eslint-disable-next-line no-console
-      console.log(this.isOpen)
     },
   },
 }

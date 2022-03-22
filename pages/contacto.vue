@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="blog-banner transform bg-primary text-white">
+    <section class="blog-banner transform bg-black text-white">
       <div class="mx-auto max-w-6xl transform px-4 pt-32 pb-20 sm:px-6 lg:px-8">
         <h1 class="text-4xl font-medium">Tienes alguna duda?</h1>
         <p class="pt-4 text-xl text-gray-300 lg:w-3/6">
@@ -117,63 +117,7 @@
         </div>
       </div>
     </section>
-    <!-- <section
-      class="mx-auto max-w-6xl transform px-4 pb-20 sm:px-6 lg:mb-8 lg:px-8"
-    >
-      <h3 class="pb-3 text-3xl">Meet our team</h3>
-      <span
-        >Our support team is available 24/7 for any issues you might have with
-        our products</span
-      >
-      <div
-        class="mt-8 grid grid-cols-1 place-items-center gap-3 space-y-5 md:grid-cols-2 md:space-y-0 lg:grid-cols-4"
-      >
-        <figure class="flex flex-col">
-          <img
-            class="mb-3 h-44 w-44 rounded-lg object-cover"
-            src="https://source.unsplash.com/mEZ3PoFGs_k"
-            alt=""
-          />
-          <figcaption>
-            <p class="font-semibold">Jeanne Beahan</p>
-            <p>Baumbach - Lueilwitz</p>
-          </figcaption>
-        </figure>
-        <figure class="flex flex-col">
-          <img
-            class="mb-3 h-44 w-44 rounded-lg object-cover"
-            src="https://source.unsplash.com/7YVZYZeITc8"
-            alt=""
-          />
-          <figcaption>
-            <p class="font-semibold">Dr. Kenny Smith</p>
-            <p>Farrell LLC</p>
-          </figcaption>
-        </figure>
-        <figure class="flex flex-col">
-          <img
-            class="mb-3 h-44 w-44 rounded-lg object-cover"
-            src="https://source.unsplash.com/RGtSTDmmcCk"
-            alt=""
-          />
-          <figcaption>
-            <p class="font-semibold">Victoria Kertzmann</p>
-            <p>Little - Bins</p>
-          </figcaption>
-        </figure>
-        <figure class="flex flex-col">
-          <img
-            class="mb-3 h-44 w-44 rounded-lg object-cover"
-            src="https://source.unsplash.com/O3ymvT7Wf9U"
-            alt=""
-          />
-          <figcaption>
-            <p class="font-semibold">Terry Kertzmann</p>
-            <p>Little and Sons</p>
-          </figcaption>
-        </figure>
-      </div>
-    </section> -->
+
     <section
       class="mx-auto max-w-2xl transform px-4 pb-20 sm:px-6 lg:mb-8 lg:px-8"
     >

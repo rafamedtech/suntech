@@ -192,3 +192,34 @@ button.current-indicator {
   margin-top: -88px;
   padding-top: 88px;
 }
+
+/* Transitions */
+.slide-fade-enter {
+  /* transform: translateY(15px); */
+  filter: brightness(0);
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 1.5s ease;
+}
+
+.slide-fade-leave-to {
+  /* transform: translateY(-15px); */
+  filter: brightness(0);
+}
+
+.menu-fade-enter {
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+.menu-fade-enter-active,
+.menu-fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.menu-fade-leave-to {
+  transform: translateX(100px);
+  opacity: 0;
+}

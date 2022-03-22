@@ -1,6 +1,6 @@
 <template>
   <main class="bg-[#f3f4f6]">
-    <section class="blog-banner transform bg-primary text-white">
+    <section class="blog-banner transform bg-black text-white">
       <div class="mx-auto max-w-6xl transform px-4 pt-32 pb-20 sm:px-6 lg:px-8">
         <h1 class="text-5xl font-medium text-primary">Blog</h1>
         <p class="pt-4 text-xl lg:w-3/6">

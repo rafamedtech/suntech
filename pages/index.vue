@@ -209,7 +209,7 @@
           >
             <CartIcon />
 
-            <nuxt-link to="/contacto">Visita nuestra tienda</nuxt-link>
+            Visita nuestra tienda
           </a>
         </div>
         <svg
