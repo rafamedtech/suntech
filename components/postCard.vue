@@ -5,7 +5,7 @@
   >
     <img
       class="h-48 w-full rounded-t-lg object-cover"
-      :src="post.better_featured_image.media_details.sizes.medium.source_url"
+      :src="post.image"
       alt=""
     />
     <div class="flex flex-col p-6 text-gray-800">
@@ -13,13 +13,19 @@
         {{ post.title.rendered }}
       </h2>
       <!-- eslint-disable-line vue/no-v-html -->
-      <p class="mt-3 text-gray-600" v-html="post.excerpt.rendered"></p>
+      <p class="mt-3 text-sm text-gray-600" v-html="post.excerpt.rendered"></p>
 
       <hr class="divider my-5 w-full" />
       <div class="flex items-center justify-center">
         <span class="text-center text-xs"
-          >Published on
-          <span class="text-primary">{{ new Date(post.date) }}</span></span
+          >Publicado el
+          <span class="text-primary">{{
+            new Date(post.date).toLocaleString('es-MX', {
+              month: 'long',
+              day: 'numeric',
+              year: 'numeric',
+            })
+          }}</span></span
         >
       </div>
     </div>

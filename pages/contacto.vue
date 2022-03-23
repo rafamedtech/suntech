@@ -37,7 +37,7 @@
     >
       <div class="mb-8 grid grid-cols-1 gap-8 lg:grid-cols-3 lg:space-y-0">
         <div
-          class="flex flex-col items-center space-y-2 rounded-lg bg-white p-8 px-6 pb-6"
+          class="flex flex-col items-center space-y-2 rounded-lg bg-white p-8 px-6 pb-6 shadow-xl"
         >
           <svg
             class="h-10 w-10 text-primary"
@@ -60,7 +60,7 @@
           <a class="text-primary" href="tel:555-123-4567">(555) 123-4567</a>
         </div>
         <div
-          class="flex flex-col items-center space-y-2 rounded-lg bg-white p-8 px-6 pb-6"
+          class="flex flex-col items-center space-y-2 rounded-lg bg-white p-8 px-6 pb-6 shadow-xl"
         >
           <svg
             class="h-10 w-10 text-primary"
@@ -91,7 +91,7 @@
           >
         </div>
         <div
-          class="flex flex-col items-center space-y-2 rounded-lg bg-white p-8 px-6 pb-6"
+          class="flex flex-col items-center space-y-2 rounded-lg bg-white p-8 px-6 pb-6 shadow-xl"
         >
           <svg
             class="h-10 w-10 text-primary"

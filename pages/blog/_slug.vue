@@ -2,6 +2,20 @@
   <div>
     <img
       class="hidden h-[500px] object-cover lg:inline"
+      :src="post.image"
+      width="1920"
+      height="500"
+      alt=""
+    />
+    <img
+      class="h-96 object-cover lg:hidden"
+      :src="post.image"
+      width="1920"
+      height="384"
+      alt=""
+    />
+    <!-- <img
+      class="hidden h-[500px] object-cover lg:inline"
       :src="post.better_featured_image.source_url"
       width="1920"
       height="500"
@@ -13,7 +27,7 @@
       width="1920"
       height="384"
       alt=""
-    />
+    /> -->
     <div
       class="mx-auto max-w-3xl transform px-4 pt-8 pb-16 sm:px-6 lg:px-8 lg:pt-20 lg:pb-24"
     >
@@ -58,11 +72,30 @@ export default {
   //     },
   //   ],
   // },
+  data: () => ({
+    post: {
+      id: 1,
+      title: {
+        rendered: 'Post 1',
+      },
+      content: {
+        rendered:
+          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
+      },
+      date: '2020-01-01',
+      excerpt: {
+        rendered:
+          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
+      },
+      slug: 'post-1',
+      image: 'https://source.unsplash.com/random',
+    },
+  }),
 
   computed: {
-    post() {
-      return this.$store.getters['posts/getSinglePost'](this.$route.params.slug)
-    },
+    // post() {
+    //   return this.$store.getters['posts/getSinglePost'](this.$route.params.slug)
+    // },
     markdown() {
       return marked(this.post.content.rendered)
     },

@@ -31,7 +31,7 @@
             </li>
           </ul>
           <a
-            href="https://flurly.com/p/tailmars"
+            href="#"
             class="hidden items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-medium text-white hover:bg-primary/75 hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 lg:flex"
           >
             Tienda <CartIcon />
@@ -102,7 +102,7 @@
 
             <hr class="divider my-6" />
             <a
-              href="https://flurly.com/p/tailmars"
+              href="#"
               class="flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-medium text-white hover:bg-primary/75 hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             >
               Tienda <CartIcon />
