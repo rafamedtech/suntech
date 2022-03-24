@@ -87,7 +87,7 @@
             Te ayudaremos con cualquier problema que tengas.
           </p>
           <a class="text-primary" href="emailto:support@tailmars.com"
-            >support@tailmars.com</a
+            >support@suntech.com</a
           >
         </div>
         <div
@@ -112,7 +112,7 @@
             Si tus necesidades son muy especificas tambien te ayudamos.
           </p>
           <a class="text-primary" href="emailto:inquiries@tailmars.com"
-            >inquiries@tailmars.com</a
+            >inquiries@suntech.com</a
           >
         </div>
       </div>
