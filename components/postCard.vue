@@ -1,11 +1,11 @@
 <template>
   <nuxt-link
-    :to="`/blog/${post.slug}`"
+    :to="{ path: `/blog/${post.slug}` }"
     class="w-full rounded-lg bg-white shadow-lg"
   >
     <img
       class="h-48 w-full rounded-t-lg object-cover"
-      :src="post.image"
+      :src="post.better_featured_image.source_url"
       alt=""
     />
     <div class="flex flex-col p-6 text-gray-800">
@@ -13,7 +13,10 @@
         {{ post.title.rendered }}
       </h2>
       <!-- eslint-disable-line vue/no-v-html -->
-      <p class="mt-3 text-sm text-gray-600" v-html="post.excerpt.rendered"></p>
+      <div
+        class="mt-3 text-sm text-gray-600"
+        v-html="post.excerpt.rendered"
+      ></div>
 
       <hr class="divider my-5 w-full" />
       <div class="flex items-center justify-center">

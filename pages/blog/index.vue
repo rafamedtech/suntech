@@ -47,7 +47,7 @@
       </form>
     </div>
     <section
-      class="container mt-12 mb-8 grid grid-cols-1 gap-8 px-4 md:grid-cols-3 lg:space-y-0"
+      class="container mt-12 grid grid-cols-1 gap-8 px-4 pb-8 md:grid-cols-3 lg:space-y-0"
     >
       <PostCard v-for="post in searchPosts" :key="post.id" :post="post" />
       <!-- <PostCard v-for="post in searchPosts" :key="post.id" :post="post" /> -->
@@ -58,110 +58,7 @@
 <script>
 export default {
   data: () => ({
-    posts: [
-      {
-        id: 1,
-        title: {
-          rendered: 'Post 1',
-        },
-        content: {
-          rendered:
-            "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
-        },
-        date: '2020-01-01',
-        excerpt: {
-          rendered:
-            "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
-        },
-        slug: 'post-1',
-        image: 'https://source.unsplash.com/random',
-      },
-      {
-        id: 2,
-        title: {
-          rendered: 'Post 2',
-        },
-        content: {
-          rendered:
-            "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
-        },
-        date: '2020-01-01',
-        excerpt: {
-          rendered:
-            "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
-        },
-        slug: 'post-2',
-        image: 'https://source.unsplash.com/random',
-      },
-      {
-        id: 3,
-        title: {
-          rendered: 'Post 3',
-        },
-        content: {
-          rendered:
-            "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
-        },
-        date: '2020-01-01',
-        excerpt: {
-          rendered:
-            "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
-        },
-        slug: 'post-3',
-        image: 'https://source.unsplash.com/random',
-      },
-      {
-        id: 4,
-        title: {
-          rendered: 'Post 4',
-        },
-        content: {
-          rendered:
-            "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
-        },
-        date: '2020-01-01',
-        excerpt: {
-          rendered:
-            "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
-        },
-        slug: 'post-4',
-        image: 'https://source.unsplash.com/random',
-      },
-      {
-        id: 5,
-        title: {
-          rendered: 'Post 5',
-        },
-        content: {
-          rendered:
-            "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
-        },
-        date: '2020-01-01',
-        excerpt: {
-          rendered:
-            "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
-        },
-        slug: 'post-5',
-        image: 'https://source.unsplash.com/random',
-      },
-      {
-        id: 6,
-        title: {
-          rendered: 'Post 6',
-        },
-        content: {
-          rendered:
-            "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
-        },
-        date: '2020-01-01',
-        excerpt: {
-          rendered:
-            "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
-        },
-        slug: 'post-6',
-        image: 'https://source.unsplash.com/random',
-      },
-    ],
+    posts: [],
     search: '',
   }),
 
@@ -186,20 +83,20 @@ export default {
       return this.$store.getters['posts/getPosts']
     },
   },
-  // async created() {
-  //   // this.$store.dispatch('posts/fetchPosts')
-  //   // this.posts = this.getPosts
-  //   try {
-  //     const { data, error } = await this.$axios.get(
-  //       'https://suntech.local/wp-json/wp/v2/posts/'
-  //     )
-  //     this.posts = data
-  //     if (error) throw error
-  //   } catch (error) {
-  //     // eslint-disable-next-line no-console
-  //     console.log(error)
-  //   }
-  // },
+  created() {
+    this.$store.dispatch('posts/fetchPosts')
+    this.posts = this.getPosts
+    // try {
+    //   const { data, error } = await this.$axios.get(
+    //     'https://suntech.local/wp-json/wp/v2/posts/'
+    //   )
+    //   this.posts = data
+    //   if (error) throw error
+    // } catch (error) {
+    //   // eslint-disable-next-line no-console
+    //   console.log(error)
+    // }
+  },
 }
 </script>
 

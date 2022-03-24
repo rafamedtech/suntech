@@ -6,13 +6,18 @@ export const state = () => ({
 
 export const actions = {
   async fetchPosts({ commit }) {
-    const { error, data } = await this.$axios.get(
-      'https://suntech.local/wp-json/wp/v2/posts/'
-    )
+    try {
+      const { error, data } = await this.$axios.get('wp/v2/posts/?_embed=true')
 
-    // eslint-disable-next-line no-console
-    console.log(data || error)
-    commit('setPosts', data)
+      // eslint-disable-next-line no-console
+      // console.log(data || error)
+      commit('setPosts', data)
+
+      if (error) throw error
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.log(error)
+    }
   },
   searchPosts({ commit }, search) {
     commit('setSearchResult', search)

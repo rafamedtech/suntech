@@ -8,7 +8,7 @@ export default {
   head: {
     title: 'suntech',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'es',
     },
     meta: [
       { charset: 'utf-8' },
@@ -42,7 +42,9 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: 'https://suntech-api.com/wp-json/',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
