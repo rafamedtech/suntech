@@ -62,18 +62,21 @@
 import marked from 'marked'
 import ChevronLeft from 'icons/ChevronLeft.vue'
 export default {
-  // head: {
-  //   title: `${this.post.title.rendered} | Suntech Electronics`,
-  //   meta: [
-  //     {
-  //       hid: 'description',
-  //       name: 'description',
-  //       content: this.post.excerpt.rendered,
-  //     },
-  //   ],
-  // },
   components: {
     ArrowLeft: ChevronLeft,
+  },
+
+  head() {
+    return {
+      title: `${this.post.title.rendered} | Suntech Electronics`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.post.excerpt.rendered,
+        },
+      ],
+    }
   },
 
   computed: {
@@ -84,6 +87,7 @@ export default {
       return marked(this.post.content.rendered)
     },
   },
+
   created() {
     this.$store.dispatch('posts/fetchPosts')
   },
