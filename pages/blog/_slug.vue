@@ -1,7 +1,7 @@
 <template>
   <main class="relative">
     <button
-      class="absolute left-2 top-2 items-center justify-center gap-x-2 rounded-md border border-primary bg-transparent px-4 py-2 text-lg font-medium text-primary transition-all hover:bg-primary/75 hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 lg:flex"
+      class="absolute left-2 top-2 flex items-center justify-center gap-x-2 rounded-md border border-primary bg-primary px-4 py-2 text-lg font-medium text-white transition-all hover:bg-primary/75 hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 lg:flex"
       @click="$router.go(-1)"
     >
       <ArrowLeft /> Regresar
