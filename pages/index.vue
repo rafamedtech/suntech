@@ -21,10 +21,11 @@
             con herramientas profesionales
           </h1>
           <p class="w-4/6 text-lg text-gray-600">
-            Equipamiento tecnologico para maxima productividad.
+            Equipamiento tecnólogico para máxima productividad.
           </p>
           <a
-            href="https://flurly.com/p/tailmars"
+            href="https://suntechelectronics.mercadoshops.com.mx/"
+            target="_blank"
             class="focus:-none flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-2 text-lg font-medium text-white hover:bg-primary/75 hover:text-white focus:ring-2 focus:ring-primary focus:ring-offset-2 lg:flex"
           >
             Comprar <ArrowRight />
@@ -48,12 +49,11 @@
         <div
           class="flex max-w-[50ch] flex-col gap-y-4 text-center md:text-left"
         >
-          <h2 class="text-4xl text-primary">Quienes somos</h2>
+          <h2 class="text-4xl text-primary">¿Quiénes somos?</h2>
           <p class="font-light text-white">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur quos id fuga inventore, commodi vel exercitationem
-            doloribus necessitatibus, quis modi quia labore ipsam voluptatibus,
-            temporibus suscipit nihil? Fugiat, animi illum.
+            Somos una empresa donde diariamente nuestro equipo busca cumplir
+            nuestra principal misión: ofrecer el mejor servicio con la mejor
+            solución en tecnología.
           </p>
         </div>
       </div>
@@ -87,7 +87,7 @@
         </div>
         <div class="flex w-full items-center pt-24 sm:pt-0 md:w-2/3">
           <div class="mx-auto sm:pr-6">
-            <h1 class="text-3xl text-gray-800">
+            <h1 class="text-3xl text-[#2C394B]">
               Nosotros tenemos el equipamiento necesario
               <br />
               <span class="text-primary"
@@ -101,14 +101,14 @@
             <div class="mt-8 flex flex-row justify-between gap-2">
               <div>
                 <h3 class="text-lg text-primary">100%</h3>
-                <p class="text-gray-800">Satisfaccion</p>
+                <p class="text-gray-800">Satisfacción</p>
               </div>
               <div>
                 <h3 class="text-lg text-primary">Soporte</h3>
                 <p class="text-gray-800">Continuo</p>
               </div>
               <div>
-                <h3 class="text-lg text-primary">Maxima</h3>
+                <h3 class="text-lg text-primary">Máxima</h3>
                 <p class="text-gray-800">Productividad</p>
               </div>
             </div>
@@ -139,16 +139,19 @@
               <img
                 class="mx-auto sm:block"
                 width="180"
-                :src="require('@/assets/images/surveillance.svg')"
+                :src="require('@/assets/images/accessories.svg')"
                 alt=""
               />
               <div class="my-auto sm:pl-4">
-                <h3 class="mb-1 font-semibold text-primary">
-                  Equipos de seguridad
-                </h3>
-                <p class="text-gray-500">
-                  Sistemas completos de seguridad para tu oficina o empresa.
-                </p>
+                <h3 class="mb-1 font-semibold text-primary">Accesorios</h3>
+                <ul>
+                  <li>
+                    <p class="text-gray-500">Refacciones</p>
+                  </li>
+                  <li>
+                    <p class="text-gray-500">Impresión y consumibles</p>
+                  </li>
+                </ul>
               </div>
             </div>
             <div
@@ -160,31 +163,42 @@
                 :src="require('@/assets/images/computer.svg')"
                 alt=""
               />
-              <div class="my-auto sm:pr-4">
+              <div class="my-auto sm:pr-4 md:pr-0">
                 <h3 class="mb-1 font-semibold text-primary">
-                  Equipo de computo
+                  Equipo de cómputo portátil y escritorio
                 </h3>
-                <p class="text-gray-500">
-                  Desde equipos de escritorio hasta equipos de alto rendimiento.
-                </p>
+                <ul>
+                  <li>
+                    <p class="text-gray-500">Componentes PC</p>
+                  </li>
+                  <li>
+                    <p class="text-gray-500">
+                      Gamer, PC’s, Laps, accesorios y componentes.
+                    </p>
+                  </li>
+                </ul>
               </div>
             </div>
             <div
-              class="col-span-2 flex flex-col gap-y-4 rounded-xl bg-white p-6 shadow-xl md:flex-row"
+              class="col-span-2 flex flex-col gap-y-4 rounded-xl bg-white p-6 shadow-xl md:flex-row md:justify-center"
             >
               <img
-                class="mx-auto sm:block"
+                class="sm:block"
                 width="280"
-                :src="require('@/assets/images/server1.svg')"
+                :src="require('@/assets/images/surveillance.svg')"
                 alt=""
               />
               <div class="my-auto sm:pl-8">
                 <h3 class="mb-1 font-semibold text-primary">
-                  Servidores profesionales
+                  Seguridad electrónica
                 </h3>
-                <p class="text-gray-500">
-                  Soluciones de servidores o sites para tu empresa o negocio.
-                </p>
+                <ul>
+                  <li>
+                    <p class="text-gray-500">Audiovisuales</p>
+                  </li>
+                  <li><p class="text-gray-500">Redes</p></li>
+                  <li><p class="text-gray-500">IoT</p></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -198,13 +212,14 @@
           class="relative z-10 mx-auto flex w-full flex-col items-center justify-center rounded-xl border border-gray-100 bg-white px-8 py-12 text-center shadow-xl md:flex-row md:justify-between md:text-left"
         >
           <div>
-            <h3>Explora todos nuestros productos</h3>
+            <h3 class="text-[#2C394B]">Explora todos nuestros productos</h3>
             <p class="mt-2 text-gray-600">
               y empieza a trabajar como un profesional...
             </p>
           </div>
           <a
-            href="https://flurly.com/p/tailmars"
+            href="https://suntechelectronics.mercadoshops.com.mx/"
+            target="_blank"
             class="hover:bg-primary-700 mt-6 flex max-w-[280px] items-center justify-center rounded-md bg-primary px-6 py-3 text-lg font-medium text-white md:mt-0"
           >
             <CartIcon />
@@ -240,11 +255,14 @@
     >
       <div class="flex flex-1 flex-col items-start justify-start">
         <div class="rounded-2xl bg-primary px-4 py-1 text-white">
-          Porque elegirnos?
+          Por qué elegirnos?
         </div>
-        <h2 class="mt-6 text-xl leading-relaxed">
-          Suntech electronics es una empresa con X años de experiencia en el
-          desarrollo de soluciones de hardware profesional.
+        <h2 class="mt-6 text-xl leading-relaxed text-[#2C394B]">
+          <span class="font-semibold text-primary"
+            >Suntech Electronics&reg;</span
+          >
+          es una empresa con X años de experiencia en el desarrollo de
+          soluciones de hardware profesional.
         </h2>
         <ul class="mt-8">
           <li class="mt-4 flex items-center text-sm text-gray-500">
@@ -320,7 +338,7 @@
             class="aspect-w-1 aspect-h-1 h-full w-full rounded-md border border-transparent bg-[#2C394B] shadow-xl"
           >
             <div class="flex flex-col justify-center text-center">
-              <div class="text-2xl font-bold text-white sm:text-4xl">50+</div>
+              <div class="text-2xl font-bold text-white sm:text-4xl">100+</div>
               <div class="sm:text-md text-sm text-primary">Clientes</div>
             </div>
           </div>
@@ -329,7 +347,7 @@
           >
             <div class="flex flex-col justify-center text-center">
               <div class="text-2xl font-bold text-[#2C394B] sm:text-4xl">
-                500+
+                300+
               </div>
               <div class="sm:text-md text-sm text-primary">
                 Ventas realizadas
@@ -354,8 +372,8 @@
             class="aspect-w-1 aspect-h-1 h-full w-full rounded-md border border-transparent bg-[#2C394B] shadow-xl"
           >
             <div class="flex flex-col justify-center text-center">
-              <div class="text-2xl font-bold text-white sm:text-4xl">10</div>
-              <div class="sm:text-md text-sm text-primary">Articulos</div>
+              <div class="text-2xl font-bold text-white sm:text-4xl">20+</div>
+              <div class="sm:text-md text-sm text-primary">Productos</div>
             </div>
           </div>
         </div>
@@ -367,7 +385,7 @@
       <h1 id="form" class="mb-2 text-primary">Platiquemos!</h1>
       <p class="mb-4 text-gray-600">
         Si hay algo en lo que podamos ayudarte, simplemente haznos saber.
-        Estaremos mas que felices de ofrecerle una solucion.
+        Estaremos mas que felices de ofrecerle una solución.
       </p>
       <ContactForm />
     </section>

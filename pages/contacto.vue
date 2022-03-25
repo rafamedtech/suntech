@@ -4,7 +4,7 @@
       <div class="mx-auto max-w-6xl transform px-4 pt-32 pb-20 sm:px-6 lg:px-8">
         <h1 class="text-4xl font-medium">Tienes alguna duda?</h1>
         <p class="pt-4 text-xl text-gray-300 lg:w-3/6">
-          Contactanos, sera un gusto poder ayudarte.
+          Contáctanos, será un gusto poder ayudarte.
         </p>
         <button
           type="button"
@@ -25,7 +25,7 @@
               d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
             />
           </svg>
-          <a href="#form">Envianos un mensaje!</a>
+          <a href="#form">Envíanos un mensaje!</a>
         </button>
       </div>
     </section>
@@ -53,11 +53,11 @@
               d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
             />
           </svg>
-          <h2 class="text-center">Departamento de ventas</h2>
+          <h2 class="text-center text-[#2C394B]">Departamento de ventas</h2>
           <p class="text-center text-gray-600">
-            contactanos para mas informacion! Estaremos felices de ayudarte.
+            contáctanos para mas información! Estaremos felices de ayudarte.
           </p>
-          <a class="text-primary" href="tel:555-123-4567">(555) 123-4567</a>
+          <a class="text-primary" href="tel:555-123-4567">(662) 403-6245</a>
         </div>
         <div
           class="flex flex-col items-center space-y-2 rounded-lg bg-white p-8 px-6 pb-6 shadow-xl"
@@ -82,11 +82,11 @@
               d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
             />
           </svg>
-          <h2 class="text-center">Tech support</h2>
+          <h2 class="text-center text-[#2C394B]">Tech support</h2>
           <p class="text-center text-gray-600">
             Te ayudaremos con cualquier problema que tengas.
           </p>
-          <a class="text-primary" href="emailto:support@tailmars.com"
+          <a class="text-primary" href="emailto:fabian.acosta.amd@hotmail.com"
             >support@suntech.com</a
           >
         </div>
@@ -107,11 +107,11 @@
               d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
             />
           </svg>
-          <h2 class="text-center">Proyectos personalizados</h2>
+          <h2 class="text-center text-[#2C394B]">Proyectos personalizados</h2>
           <p class="text-center text-gray-600">
-            Si tus necesidades son muy especificas tambien te ayudamos.
+            Si tus necesidades son muy específicas también te ayudamos.
           </p>
-          <a class="text-primary" href="emailto:inquiries@tailmars.com"
+          <a class="text-primary" href="emailto:fabian.acosta.amd@hotmail.com"
             >inquiries@suntech.com</a
           >
         </div>
@@ -124,7 +124,7 @@
       <h1 id="form" class="mb-2 text-primary">Platiquemos!</h1>
       <p class="mb-4 text-gray-600">
         Si hay algo en lo que podamos ayudarte, simplemente haznos saber.
-        Estaremos mas que felices de ofrecerle una solucion.
+        Estaremos mas que felices de ofrecerle una solución.
       </p>
       <ContactForm />
     </section>

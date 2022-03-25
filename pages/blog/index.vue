@@ -4,7 +4,7 @@
       <div class="mx-auto max-w-6xl transform px-4 pt-32 pb-20 sm:px-6 lg:px-8">
         <h1 class="text-5xl font-medium text-primary">Blog</h1>
         <p class="pt-4 text-xl lg:w-3/6">
-          Aqui podras encontrar nuestros ultimos articulos.
+          Aquí podrás encontrar nuestros ultimos artículos.
         </p>
         <button
           type="button"
@@ -68,7 +68,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Aqui podras encontrar nuestros ultimos articulos.',
+        content: 'Aquí podras encontrar nuestros ultimos artículos.',
       },
     ],
   },

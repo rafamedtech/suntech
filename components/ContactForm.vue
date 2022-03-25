@@ -18,8 +18,8 @@
           class="border-1 mb-3 w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-transparent focus:outline-primary focus:ring-transparent"
           name="your-email"
           type="email"
-          placeholder="Correo Electronico"
-          aria-label="Direccion de correo electronico"
+          placeholder="Correo Electrónico"
+          aria-label="Direccion de correo electrónico"
         />
       </label>
       <label for="your-phone">
@@ -28,8 +28,8 @@
           class="border-1 mb-3 w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-transparent focus:outline-primary focus:ring-transparent"
           name="your-phone"
           type="tel"
-          placeholder="Numero de telefono"
-          aria-label="Numero de telefono"
+          placeholder="Número de teléfono"
+          aria-label="Número de teléfono"
         />
       </label>
       <label for="message">
@@ -39,7 +39,7 @@
           name="your-message"
           cols="30"
           rows="5"
-          placeholder="En que podemos ayudarte!"
+          placeholder="En qué podemos ayudarte!"
           aria-label="Tu mensaje"
         ></textarea>
       </label>
