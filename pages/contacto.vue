@@ -8,7 +8,7 @@
         </p>
         <button
           type="button"
-          class="mt-6 flex items-center rounded-lg bg-white px-6 py-3 font-medium text-gray-600 hover:text-primary"
+          class="mt-6 flex items-center rounded-lg bg-white px-6 py-3 font-medium text-gray-500 hover:text-primary"
           aria-label="Send us a message"
         >
           <svg
@@ -53,8 +53,8 @@
               d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
             />
           </svg>
-          <h2 class="text-center text-[#2C394B]">Departamento de ventas</h2>
-          <p class="text-center text-gray-600">
+          <h2 class="text-center text-secondary">Departamento de ventas</h2>
+          <p class="text-center text-gray-500">
             contáctanos para mas información! Estaremos felices de ayudarte.
           </p>
           <a class="text-primary" href="tel:555-123-4567">(662) 403-6245</a>
@@ -82,8 +82,8 @@
               d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
             />
           </svg>
-          <h2 class="text-center text-[#2C394B]">Tech support</h2>
-          <p class="text-center text-gray-600">
+          <h2 class="text-center text-secondary">Tech support</h2>
+          <p class="text-center text-gray-500">
             Te ayudaremos con cualquier problema que tengas.
           </p>
           <a class="text-primary" href="emailto:fabian.acosta.amd@hotmail.com"
@@ -107,8 +107,8 @@
               d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
             />
           </svg>
-          <h2 class="text-center text-[#2C394B]">Proyectos personalizados</h2>
-          <p class="text-center text-gray-600">
+          <h2 class="text-center text-secondary">Proyectos personalizados</h2>
+          <p class="text-center text-gray-500">
             Si tus necesidades son muy específicas también te ayudamos.
           </p>
           <a class="text-primary" href="emailto:fabian.acosta.amd@hotmail.com"
@@ -122,7 +122,7 @@
       class="mx-auto max-w-2xl transform px-4 pb-20 sm:px-6 lg:mb-8 lg:px-8"
     >
       <h1 id="form" class="mb-2 text-primary">Platiquemos!</h1>
-      <p class="mb-4 text-gray-600">
+      <p class="mb-4 text-gray-500">
         Si hay algo en lo que podamos ayudarte, simplemente haznos saber.
         Estaremos mas que felices de ofrecerle una solución.
       </p>

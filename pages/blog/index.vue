@@ -8,7 +8,7 @@
         </p>
         <button
           type="button"
-          class="mt-6 flex items-center rounded-lg bg-white px-6 py-3 font-medium text-gray-600 opacity-0 hover:text-primary"
+          class="mt-6 flex items-center rounded-lg bg-white px-6 py-3 font-medium text-gray-500 opacity-0 hover:text-primary"
           aria-label="Send us a message"
         >
           <span>Visita nuestro blog!</span>
@@ -68,7 +68,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Aquí podras encontrar nuestros ultimos artículos.',
+        content: 'Aquí podrás encontrar nuestros ultimos artículos.',
       },
     ],
   },
@@ -86,16 +86,6 @@ export default {
   created() {
     this.$store.dispatch('posts/fetchPosts')
     this.posts = this.getPosts
-    // try {
-    //   const { data, error } = await this.$axios.get(
-    //     'https://suntech.local/wp-json/wp/v2/posts/'
-    //   )
-    //   this.posts = data
-    //   if (error) throw error
-    // } catch (error) {
-    //   // eslint-disable-next-line no-console
-    //   console.log(error)
-    // }
   },
 }
 </script>

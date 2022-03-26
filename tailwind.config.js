@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors');
+const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
     './components/**/*.{js,vue,ts}',
@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#fe6847',
+        secondary: '#2C394B',
       },
       container: {
         center: true,
@@ -42,7 +43,8 @@ module.exports = {
         },
       },
       boxShadow: {
-        'xl-even': '0 5px 35px 5px rgba(0, 0, 0, 0.1), 0 5px 10px 5px rgba(0, 0, 0, 0.04)',
+        'xl-even':
+          '0 5px 35px 5px rgba(0, 0, 0, 0.1), 0 5px 10px 5px rgba(0, 0, 0, 0.04)',
       },
       animation: {
         typing: 'inout 4.5s steps(8, end) infinite',
@@ -105,11 +107,9 @@ module.exports = {
     },
   },
 
-    
-  
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
-    require('@tailwindcss/aspect-ratio')
+    require('@tailwindcss/aspect-ratio'),
   ],
 }

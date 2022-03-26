@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-[#2C394B] text-sm text-gray-500">
+  <nav class="bg-secondary text-sm text-gray-300">
     <div class="relative mx-auto max-w-6xl">
       <div class="flex items-center justify-between p-4">
         <nuxt-link :to="{ path: '/' }" class="w-1/2 p-1 focus:outline-none"

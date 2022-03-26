@@ -14,19 +14,19 @@
           class="flex flex-col items-center justify-center gap-y-2 pt-8 text-center lg:items-start lg:pt-0 lg:pl-16 lg:text-left"
         >
           <h1
-            class="my-6 text-3xl font-semibold text-[#2C394B]/75 sm:text-5xl sm:leading-tight"
+            class="my-6 text-3xl font-semibold text-secondary/75 sm:text-5xl sm:leading-tight"
           >
             Trabaja como un profesional,
             <br />
             con herramientas profesionales
           </h1>
-          <p class="w-4/6 text-lg text-gray-600">
+          <p class="w-4/6 text-lg text-gray-500">
             Equipamiento tecnólogico para máxima productividad.
           </p>
           <a
             href="https://suntechelectronics.mercadoshops.com.mx/"
             target="_blank"
-            class="focus:-none flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-2 text-lg font-medium text-white hover:bg-primary/75 hover:text-white focus:ring-2 focus:ring-primary focus:ring-offset-2 lg:flex"
+            class="flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-2 text-lg font-medium text-white hover:bg-primary/75 hover:text-white focus:ring-2 focus:ring-primary focus:ring-offset-2 lg:flex"
           >
             Comprar <ArrowRight />
           </a>
@@ -36,7 +36,7 @@
 
     <!-- Features section -->
     <section
-      class="mx-auto flex flex-col items-center justify-center bg-[#2C394B] px-4 pt-20 pb-24 sm:px-6 lg:px-8"
+      class="mx-auto flex flex-col items-center justify-center bg-secondary px-4 pt-20 pb-24 sm:px-6 lg:px-8"
     >
       <div class="container flex flex-col items-center gap-8 md:flex-row">
         <figure class="w-full md:w-1/2">
@@ -50,7 +50,7 @@
           class="flex max-w-[50ch] flex-col gap-y-4 text-center md:text-left"
         >
           <h2 class="text-4xl text-primary">¿Quiénes somos?</h2>
-          <p class="font-light text-white">
+          <p class="font-light text-gray-100">
             Somos una empresa donde diariamente nuestro equipo busca cumplir
             nuestra principal misión: ofrecer el mejor servicio con la mejor
             solución en tecnología.
@@ -87,29 +87,29 @@
         </div>
         <div class="flex w-full items-center pt-24 sm:pt-0 md:w-2/3">
           <div class="mx-auto sm:pr-6">
-            <h1 class="text-3xl text-[#2C394B]">
+            <h1 class="text-3xl text-secondary">
               Nosotros tenemos el equipamiento necesario
               <br />
               <span class="text-primary"
                 >Para que te enfoques en lo importante de tu trabajo
               </span>
             </h1>
-            <p class="mt-6 text-lg text-gray-600">
+            <p class="mt-6 text-lg text-gray-500">
               Toma ventaja de nuestra experiencia para obtener las mejores
               herramientas.
             </p>
             <div class="mt-8 flex flex-row justify-between gap-2">
               <div>
                 <h3 class="text-lg text-primary">100%</h3>
-                <p class="text-gray-800">Satisfacción</p>
+                <p class="text-secondary">Satisfacción</p>
               </div>
               <div>
                 <h3 class="text-lg text-primary">Soporte</h3>
-                <p class="text-gray-800">Continuo</p>
+                <p class="text-secondary">Continuo</p>
               </div>
               <div>
                 <h3 class="text-lg text-primary">Máxima</h3>
-                <p class="text-gray-800">Productividad</p>
+                <p class="text-secondary">Productividad</p>
               </div>
             </div>
           </div>
@@ -206,21 +206,21 @@
       </div>
     </section>
 
-    <section class="mx-auto overflow-x-hidden bg-[#2C394B] px-8 py-20">
+    <section class="mx-auto overflow-x-hidden bg-secondary px-8 py-20">
       <div class="relative mx-auto w-full max-w-5xl">
         <div
           class="relative z-10 mx-auto flex w-full flex-col items-center justify-center rounded-xl border border-gray-100 bg-white px-8 py-12 text-center shadow-xl md:flex-row md:justify-between md:text-left"
         >
           <div>
-            <h3 class="text-[#2C394B]">Explora todos nuestros productos</h3>
-            <p class="mt-2 text-gray-600">
+            <h3 class="text-secondary">Explora todos nuestros productos</h3>
+            <p class="mt-2 text-gray-500">
               y empieza a trabajar como un profesional...
             </p>
           </div>
           <a
             href="https://suntechelectronics.mercadoshops.com.mx/"
             target="_blank"
-            class="hover:bg-primary-700 mt-6 flex max-w-[280px] items-center justify-center rounded-md bg-primary px-6 py-3 text-lg font-medium text-white md:mt-0"
+            class="mt-6 flex max-w-[280px] items-center justify-center rounded-md bg-primary px-6 py-3 text-lg font-medium text-white hover:bg-primary/75 md:mt-0"
           >
             <CartIcon />
 
@@ -257,7 +257,7 @@
         <div class="rounded-2xl bg-primary px-4 py-1 text-white">
           Por qué elegirnos?
         </div>
-        <h2 class="mt-6 text-xl leading-relaxed text-[#2C394B]">
+        <h2 class="mt-6 text-xl leading-relaxed text-secondary">
           <span class="font-semibold text-primary"
             >Suntech Electronics&reg;</span
           >
@@ -335,7 +335,7 @@
       >
         <div class="flex flex-1 flex-col gap-4 md:pb-16">
           <div
-            class="aspect-w-1 aspect-h-1 h-full w-full rounded-md border border-transparent bg-[#2C394B] shadow-xl"
+            class="aspect-w-1 aspect-h-1 h-full w-full rounded-md border border-transparent bg-secondary shadow-xl"
           >
             <div class="flex flex-col justify-center text-center">
               <div class="text-2xl font-bold text-white sm:text-4xl">100+</div>
@@ -346,7 +346,7 @@
             class="aspect-w-1 aspect-h-1 h-full w-full rounded-md border border-gray-100 bg-white shadow-xl"
           >
             <div class="flex flex-col justify-center text-center">
-              <div class="text-2xl font-bold text-[#2C394B] sm:text-4xl">
+              <div class="text-2xl font-bold text-secondary sm:text-4xl">
                 300+
               </div>
               <div class="sm:text-md text-sm text-primary">
@@ -360,7 +360,7 @@
             class="aspect-w-1 aspect-h-1 h-full w-full rounded-md border border-gray-100 bg-white shadow-xl"
           >
             <div class="flex flex-col justify-center text-center">
-              <div class="text-2xl font-bold text-[#2C394B] sm:text-4xl">
+              <div class="text-2xl font-bold text-secondary sm:text-4xl">
                 100%
               </div>
               <div class="sm:text-md text-sm text-primary">
@@ -369,7 +369,7 @@
             </div>
           </div>
           <div
-            class="aspect-w-1 aspect-h-1 h-full w-full rounded-md border border-transparent bg-[#2C394B] shadow-xl"
+            class="aspect-w-1 aspect-h-1 h-full w-full rounded-md border border-transparent bg-secondary shadow-xl"
           >
             <div class="flex flex-col justify-center text-center">
               <div class="text-2xl font-bold text-white sm:text-4xl">20+</div>
@@ -383,7 +383,7 @@
       class="mx-auto max-w-2xl transform px-4 pb-20 sm:px-6 lg:mb-8 lg:px-8"
     >
       <h1 id="form" class="mb-2 text-primary">Platiquemos!</h1>
-      <p class="mb-4 text-gray-600">
+      <p class="mb-4 text-gray-500">
         Si hay algo en lo que podamos ayudarte, simplemente haznos saber.
         Estaremos mas que felices de ofrecerle una solución.
       </p>
