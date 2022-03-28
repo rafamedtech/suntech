@@ -1,4 +1,5 @@
 import { resolve } from 'path'
+import axios from 'axios'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -45,6 +46,16 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     baseURL: 'https://suntech-api.com/wp-json/',
+  },
+
+  sitemap: {
+    hostname: 'https://suntechelectronics.tech/',
+    routes: async () => {
+      const { data } = await axios.get(
+        'https://suntech-api.com/wp-json/wp/v2/posts/'
+      )
+      return data.data.map((post) => `/blog/${post.slug.rendered}`)
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
