@@ -84,7 +84,7 @@
             <div>
               <nuxt-link
                 :to="{ path: '/blog' }"
-                class="mb-4 text-lg"
+                class="mb-4 text-lg text-secondary"
                 @click.native="toggleMenu"
                 >Blog</nuxt-link
               >
@@ -93,7 +93,7 @@
             <hr class="divider my-6" />
             <nuxt-link
               :to="{ path: '/contacto' }"
-              class="mb-4 text-lg"
+              class="mb-4 text-lg text-secondary"
               @click.native="toggleMenu"
               >Contacto</nuxt-link
             >

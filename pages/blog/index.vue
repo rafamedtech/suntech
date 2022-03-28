@@ -47,11 +47,18 @@
       </form>
     </div>
     <section
+      v-if="searchPosts.length"
       class="container mt-12 grid grid-cols-1 gap-8 px-4 pb-8 md:grid-cols-3 lg:space-y-0"
     >
       <PostCard v-for="post in searchPosts" :key="post.id" :post="post" />
+
       <!-- <PostCard v-for="post in searchPosts" :key="post.id" :post="post" /> -->
     </section>
+    <article v-else class="mb-10">
+      <p class="text-center text-3xl text-secondary">
+        No hay artículos todavía.
+      </p>
+    </article>
   </main>
 </template>
 

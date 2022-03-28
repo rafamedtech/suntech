@@ -123,7 +123,7 @@
         <div
           class="mx-auto flex h-full max-w-xl flex-col justify-center pt-6 pb-10 text-center"
         >
-          <h2 class="text-4xl text-primary">
+          <h2 class="text-4xl font-semibold text-secondary/75">
             Trabajamos con profesionales de todo tipo
           </h2>
           <p class="mt-6 text-lg text-gray-500">
@@ -155,7 +155,7 @@
               </div>
             </div>
             <div
-              class="col-span-2 flex flex-col-reverse gap-y-4 rounded-xl bg-white p-6 shadow-xl md:col-span-1 md:flex-row"
+              class="col-span-2 flex flex-col gap-y-4 rounded-xl bg-white p-6 shadow-xl md:col-span-1 md:flex-row"
             >
               <img
                 class="order-2 mx-auto sm:block"
@@ -180,7 +180,7 @@
               </div>
             </div>
             <div
-              class="col-span-2 flex flex-col gap-y-4 rounded-xl bg-white p-6 shadow-xl md:flex-row md:justify-center"
+              class="col-span-2 flex flex-col-reverse gap-y-4 rounded-xl bg-white p-6 shadow-xl md:flex-row md:justify-center"
             >
               <img
                 class="sm:block"
@@ -254,14 +254,14 @@
       class="mx-auto flex max-w-5xl flex-col gap-4 px-8 py-20 pb-20 md:flex-row"
     >
       <div class="flex flex-1 flex-col items-start justify-start">
-        <div class="rounded-2xl bg-primary px-4 py-1 text-white">
+        <div class="rounded-2xl bg-secondary px-4 py-1 text-gray-100">
           Por qué elegirnos?
         </div>
         <h2 class="mt-6 text-xl leading-relaxed text-secondary">
           <span class="font-semibold text-primary"
             >Suntech Electronics&reg;</span
           >
-          es una empresa con X años de experiencia en el desarrollo de
+          es una empresa con 8 años de experiencia en el desarrollo de
           soluciones de hardware profesional.
         </h2>
         <ul class="mt-8">
@@ -335,7 +335,7 @@
       >
         <div class="flex flex-1 flex-col gap-4 md:pb-16">
           <div
-            class="aspect-w-1 aspect-h-1 h-full w-full rounded-md border border-transparent bg-secondary shadow-xl"
+            class="aspect-w-1 aspect-h-1 h-full w-full rounded-md border border-transparent bg-secondary shadow-xl transition-all hover:-translate-y-2"
           >
             <div class="flex flex-col justify-center text-center">
               <div class="text-2xl font-bold text-white sm:text-4xl">100+</div>
@@ -343,7 +343,7 @@
             </div>
           </div>
           <div
-            class="aspect-w-1 aspect-h-1 h-full w-full rounded-md border border-gray-100 bg-white shadow-xl"
+            class="aspect-w-1 aspect-h-1 h-full w-full rounded-md border border-gray-100 bg-white shadow-xl transition-all hover:-translate-y-2"
           >
             <div class="flex flex-col justify-center text-center">
               <div class="text-2xl font-bold text-secondary sm:text-4xl">
@@ -357,7 +357,7 @@
         </div>
         <div class="flex flex-1 flex-col gap-4 md:pt-16">
           <div
-            class="aspect-w-1 aspect-h-1 h-full w-full rounded-md border border-gray-100 bg-white shadow-xl"
+            class="aspect-w-1 aspect-h-1 h-full w-full rounded-md border border-gray-100 bg-white shadow-xl transition-all hover:-translate-y-2"
           >
             <div class="flex flex-col justify-center text-center">
               <div class="text-2xl font-bold text-secondary sm:text-4xl">
@@ -369,7 +369,7 @@
             </div>
           </div>
           <div
-            class="aspect-w-1 aspect-h-1 h-full w-full rounded-md border border-transparent bg-secondary shadow-xl"
+            class="aspect-w-1 aspect-h-1 h-full w-full rounded-md border border-transparent bg-secondary shadow-xl transition-all hover:-translate-y-2"
           >
             <div class="flex flex-col justify-center text-center">
               <div class="text-2xl font-bold text-white sm:text-4xl">20+</div>
