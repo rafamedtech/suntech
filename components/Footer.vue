@@ -27,7 +27,7 @@
           <Youtube :size="36" />
         </a>
         <nuxt-link
-          to="/contact"
+          to="/contacto"
           class="text-[#8a98aa] transition-all hover:-translate-y-2 hover:text-primary"
         >
           <Email :size="36" />
