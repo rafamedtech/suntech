@@ -10,7 +10,7 @@ export const actions = {
       const { error, data } = await this.$axios.get('wp/v2/posts/?_embed=true')
 
       // eslint-disable-next-line no-console
-      // console.log(data || error)
+      console.log(data || error)
       commit('setPosts', data)
 
       if (error) throw error
