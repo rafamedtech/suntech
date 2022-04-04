@@ -45,7 +45,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://suntech-api.com/wp-json/',
+    baseURL: 'https://suntechelectronics.tech/backend/wp-json/',
   },
 
   // sitemap: {
