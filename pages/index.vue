@@ -382,7 +382,7 @@
     <section
       class="mx-auto max-w-2xl transform px-4 pb-20 sm:px-6 lg:mb-8 lg:px-8"
     >
-      <h1 id="form" class="mb-2 text-primary">Platiquemos!</h1>
+      <h1 id="form" class="mb-2 text-primary">¡Platiquemos!</h1>
       <p class="mb-4 text-gray-500">
         Si hay algo en lo que podamos ayudarte, simplemente haznos saber.
         Estaremos mas que felices de ofrecerle una solución.
