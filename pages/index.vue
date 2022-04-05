@@ -408,7 +408,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Bienvenidos a Suntech Electronics, una empresa dedicada a la venta de productos electronicos.',
+          'Bienvenidos a Suntech Electronics, una empresa dedicada a la venta de productos electrónicos.',
       },
     ],
   },
