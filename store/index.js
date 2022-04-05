@@ -10,7 +10,7 @@ export const actions = {
   },
   async sendForm({ commit }, form) {
     const { error, data } = await this.$axios.post(
-      'contact-form-7/v1/contact-forms/10/feedback',
+      'contact-form-7/v1/contact-forms/5/feedback',
       form
     )
 
