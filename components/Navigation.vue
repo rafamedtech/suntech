@@ -6,7 +6,6 @@
           :to="{ path: '/' }"
           class="w-1/2 p-1 focus:outline-none"
           title="Home"
-        >
           ><img
             class="h-12"
             :src="require('@/assets/images/logo.png')"
