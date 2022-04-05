@@ -4,6 +4,7 @@
     class="w-full rounded-lg bg-white shadow-lg"
   >
     <img
+      v-if="post.better_featured_image"
       class="h-48 w-full rounded-t-lg object-cover"
       :src="post.better_featured_image.source_url"
       alt=""

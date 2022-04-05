@@ -7,6 +7,7 @@
       <ArrowLeft /> Regresar
     </button>
     <img
+      v-if="post.better_featured_image"
       class="hidden h-[500px] object-cover lg:inline"
       :src="post.better_featured_image.source_url"
       width="1920"
@@ -14,6 +15,7 @@
       alt=""
     />
     <img
+      v-if="post.better_featured_image"
       class="h-96 object-cover lg:hidden"
       :src="post.better_featured_image.media_details.sizes.medium.source_url"
       width="1920"
