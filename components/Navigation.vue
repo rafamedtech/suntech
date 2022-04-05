@@ -2,8 +2,15 @@
   <nav class="bg-secondary text-sm text-gray-300">
     <div class="relative mx-auto max-w-6xl">
       <div class="flex items-center justify-between p-4">
-        <nuxt-link :to="{ path: '/' }" class="w-1/2 p-1 focus:outline-none"
-          ><img class="h-12" :src="require('@/assets/images/logo.png')" alt=""
+        <nuxt-link
+          :to="{ path: '/' }"
+          class="w-1/2 p-1 focus:outline-none"
+          title="Home"
+        >
+          ><img
+            class="h-12"
+            :src="require('@/assets/images/logo.png')"
+            alt="Suntech logo"
         /></nuxt-link>
         <div class="hidden lg:flex lg:gap-12">
           <ul class="flex cursor-pointer items-center space-x-12 text-lg">

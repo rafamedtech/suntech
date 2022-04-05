@@ -7,7 +7,7 @@
       >
         <img
           src="@/assets/images/hero.svg"
-          alt=""
+          alt="Suntech hero image"
           class="mx-auto md:w-2/3 lg:w-1/2"
         />
         <div
@@ -69,18 +69,18 @@
         <div class="relative mx-auto flex px-8 sm:order-2 sm:w-2/3">
           <div class="relative ml-auto h-full w-full">
             <img
-              alt=""
               :src="require('@/assets/images/parallax1.jpeg')"
+              alt="parallax collage item 1"
               class="rellax absolute right-0 top-20 z-30 h-auto w-[60%] rounded-lg object-cover object-center shadow-md"
             />
             <img
-              alt=""
               :src="require('@/assets/images/parallax2.jpeg')"
+              alt="parallax collage item 2"
               class="rellax relative left-0 top-0 z-20 h-auto w-1/2 rounded-lg object-cover object-center shadow-md"
             />
             <img
-              alt=""
               :src="require('@/assets/images/parallax3.jpeg')"
+              alt="parallax collage item 3"
               class="rellax absolute -bottom-16 right-8 z-10 h-auto w-[50%] rounded-lg object-cover object-center shadow-md md:bottom-24 lg:-bottom-16"
             />
           </div>
@@ -140,7 +140,7 @@
                 class="mx-auto sm:block"
                 width="180"
                 :src="require('@/assets/images/accessories.svg')"
-                alt=""
+                alt="accessories"
               />
               <div class="my-auto sm:pl-4">
                 <h3 class="mb-1 font-semibold text-primary">Accesorios</h3>
@@ -161,7 +161,7 @@
                 class="order-2 mx-auto sm:block"
                 width="180"
                 :src="require('@/assets/images/computer.svg')"
-                alt=""
+                alt="computer"
               />
               <div class="my-auto sm:pr-4 md:pr-0">
                 <h3 class="mb-1 font-semibold text-primary">
@@ -186,7 +186,7 @@
                 class="sm:block"
                 width="280"
                 :src="require('@/assets/images/surveillance.svg')"
-                alt=""
+                alt="security"
               />
               <div class="my-auto sm:pl-8">
                 <h3 class="mb-1 font-semibold text-primary">

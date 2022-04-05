@@ -5,30 +5,35 @@
         <a
           href="https://www.facebook.com/Suntechgadgets"
           class="text-[#8a98aa] transition-all hover:-translate-y-2 hover:text-primary"
+          title="Facebook"
         >
           <Facebook :size="36" />
         </a>
         <a
           href="https://www.instagram.com/suntechelectronicos/"
           class="text-[#8a98aa] transition-all hover:-translate-y-2 hover:text-primary"
+          title="Instagram"
         >
           <Instagram :size="36" />
         </a>
         <a
           href="https://twitter.com/suntechelectron"
           class="text-[#8a98aa] transition-all hover:-translate-y-2 hover:text-primary"
+          title="Twitter"
         >
           <Twitter :size="36" />
         </a>
         <a
           href="https://www.youtube.com/channel/UCA9wYLJCoxnTklp5xG-qtvA"
           class="text-[#8a98aa] transition-all hover:-translate-y-2 hover:text-primary"
+          title="Youtube"
         >
           <Youtube :size="36" />
         </a>
         <nuxt-link
           to="/contacto"
           class="text-[#8a98aa] transition-all hover:-translate-y-2 hover:text-primary"
+          title="Contacto"
         >
           <Email :size="36" />
         </nuxt-link>
