@@ -34,7 +34,7 @@
       </div>
     </section>
 
-    <!-- Features section -->
+    <!-- Features section! -->
     <section
       class="mx-auto flex flex-col items-center justify-center bg-secondary px-4 pt-20 pb-24 sm:px-6 lg:px-8"
     >
