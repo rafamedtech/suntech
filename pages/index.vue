@@ -70,17 +70,17 @@
           <div class="relative ml-auto h-full w-full">
             <img
               alt=""
-              src="https://images.unsplash.com/photo-1618858510480-d079a17fd586?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              :src="require('@/assets/images/parallax1.jpeg')"
               class="rellax absolute right-0 top-20 z-30 h-auto w-[60%] rounded-lg object-cover object-center shadow-md"
             />
             <img
               alt=""
-              src="https://images.unsplash.com/photo-1640622661329-67f406a77d53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              :src="require('@/assets/images/parallax2.jpeg')"
               class="rellax relative left-0 top-0 z-20 h-auto w-1/2 rounded-lg object-cover object-center shadow-md"
             />
             <img
               alt=""
-              src="https://images.unsplash.com/photo-1560732488-6b0df240254a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              :src="require('@/assets/images/parallax3.jpeg')"
               class="rellax absolute -bottom-16 right-8 z-10 h-auto w-[50%] rounded-lg object-cover object-center shadow-md md:bottom-24 lg:-bottom-16"
             />
           </div>
