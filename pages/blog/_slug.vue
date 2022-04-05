@@ -69,6 +69,14 @@ export default {
     ArrowLeft: ChevronLeft,
   },
 
+  async asyncData({ $axios, params }) {
+    const { data } = await $axios.get(`/wp/v2/posts?slug=${params.slug}`)
+    return {
+      post: data[0],
+      markdown: marked(data[0].content.rendered),
+    }
+  },
+
   head() {
     return {
       title: `${this.post.title.rendered} | Suntech Electronics`,
@@ -80,19 +88,6 @@ export default {
         },
       ],
     }
-  },
-
-  computed: {
-    post() {
-      return this.$store.getters['posts/getSinglePost'](this.$route.params.slug)
-    },
-    markdown() {
-      return marked(this.post.content.rendered)
-    },
-  },
-
-  created() {
-    this.$store.dispatch('posts/fetchPosts')
   },
 }
 </script>
