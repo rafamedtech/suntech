@@ -57,7 +57,7 @@
           <p class="text-center text-gray-500">
             contáctanos para mas información! Estaremos felices de ayudarte.
           </p>
-          <a class="text-primary" href="tel:555-123-4567">(662) 403-6245</a>
+          <a class="text-primary" href="tel:662-403-6245">(662) 403-6245</a>
         </div>
         <div
           class="flex flex-col items-center space-y-2 rounded-lg bg-white p-8 px-6 pb-6 shadow-xl"
@@ -86,8 +86,10 @@
           <p class="text-center text-gray-500">
             Te ayudaremos con cualquier problema que tengas.
           </p>
-          <a class="text-primary" href="emailto:fabian.acosta.amd@hotmail.com"
-            >support@suntech.com</a
+          <a
+            class="text-primary"
+            href="emailto:contacto@suntechelectronics.tech"
+            >contacto@suntechelectronics.tech</a
           >
         </div>
         <div
@@ -111,8 +113,10 @@
           <p class="text-center text-gray-500">
             Si tus necesidades son muy específicas también te ayudamos.
           </p>
-          <a class="text-primary" href="emailto:fabian.acosta.amd@hotmail.com"
-            >inquiries@suntech.com</a
+          <a
+            class="text-primary"
+            href="emailto:contacto@suntechelectronics.tech"
+            >contacto@suntechelectronics.tech</a
           >
         </div>
       </div>
