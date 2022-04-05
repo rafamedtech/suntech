@@ -24,7 +24,7 @@
             Equipamiento tecnólogico para máxima productividad.
           </p>
           <a
-            href="https://suntechelectronics.mercadoshops.com.mx/"
+            href="https://suntechonline.tech"
             target="_blank"
             class="flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-2 text-lg font-medium text-white hover:bg-primary/75 hover:text-white focus:ring-2 focus:ring-primary focus:ring-offset-2 lg:flex"
           >
@@ -218,7 +218,7 @@
             </p>
           </div>
           <a
-            href="https://suntechelectronics.mercadoshops.com.mx/"
+            href="https://suntechonline.tech"
             target="_blank"
             class="mt-6 flex max-w-[280px] items-center justify-center rounded-md bg-primary px-6 py-3 text-lg font-medium text-white hover:bg-primary/75 md:mt-0"
           >

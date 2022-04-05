@@ -14,14 +14,15 @@
       height="500"
       alt=""
     />
-    <img
+    <!-- <img
       v-if="post.better_featured_image"
       class="h-96 object-cover lg:hidden"
       :src="post.better_featured_image.media_details.sizes.medium.source_url"
       width="1920"
       height="384"
       alt=""
-    />
+    /> -->
+
     <div
       class="mx-auto max-w-3xl transform px-4 pt-8 pb-16 sm:px-6 lg:px-8 lg:pt-20 lg:pb-24"
     >

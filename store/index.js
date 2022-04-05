@@ -9,7 +9,7 @@ export const actions = {
     await dispatch('posts/fetchPosts')
   },
   async sendForm({ commit }, form) {
-    const { error, data } = await this.$axios.post(
+    const { data } = await this.$axios.post(
       'contact-form-7/v1/contact-forms/5/feedback',
       form
     )
@@ -22,7 +22,7 @@ export const actions = {
     this.$router.push('/')
 
     // eslint-disable-next-line no-console
-    console.log(data || error)
+    // console.log(data || error)
   },
 }
 
